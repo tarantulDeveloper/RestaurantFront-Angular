@@ -1,0 +1,83 @@
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+   
+}
+
+
+
+.employee-table {
+    border-collapse: collapse;
+    margin: 3px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+    width: 60%;
+}
+
+.employee-table table,th,td {
+    border: 1px solid black;
+}
+
+.employee-table thead tr {
+    background-color: rgb(214, 77, 226);
+    color: rgb(248, 247, 247);
+    letter-spacing: 1px;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px 15px;
+}
+
+.employee-table tbody tr{
+    border-bottom: 1px solid grey;
+}
+
+.employee-table tbody tr:nth-of-type(even) {
+    background: rgba(164, 209, 235, 0.849);
+}
+
+.employee-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(214, 77, 226);
+}
+
+.employee-table tbody tr:hover{
+   background-color: rgb(116, 235, 169);
+   color: rgb(230, 38, 38);
+   cursor: pointer;
+}
+
+.table button {
+    padding: 4px;
+    color: white;
+    border-radius: 3px;
+    border: 0px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.9);
+    font-weight: bold;
+    cursor: pointer; 
+    background-color: red;
+}
+
+.edit {
+    background: rgb(26, 134, 26); 
+}
+
+.edit:hover {
+    background-color: rgb(25, 214, 25);
+}
+
+.remove {
+    margin-left: 15px;
+    background-color: rgb(218, 68, 68);
+}
+
+.remove:hover {
+    background-color: rgb(117, 12, 12);
+}

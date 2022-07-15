@@ -1,0 +1,57 @@
+<div class="update">
+   <h3 style="text-align: center;">Edit Employee</h3>
+    <form (ngSubmit)="onSubmit()" class="update-employee">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+        </div>
+        <div>
+            <label for="depatemnt">Department</label>
+            <input type="text" id="department" [(ngModel)]="employee.department" name="department">
+        </div>
+        <div>
+            <label for="salary">Salary in $</label>
+            <input type="number" id="salary" [(ngModel)]="employee.salary" name="salary">
+        </div>
+
+
+        <div>
+            <label for="jobBegin">Job begin time</label>
+            <input type="text" id="jobBegin" [(ngModel)]="employee.jobBegin" name="jobBegin">
+        </div>
+        <div>
+            <label for="jobEnd">Job end time</label>
+            <input type="text" id="jobEnd" [(ngModel)]="employee.jobEnd" name="jobEnd">
+        </div>
+        <div>
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" [(ngModel)]="employee.branch" name="branch">
+        </div>
+        <div>
+            <label for="experience">Experience (years)</label>
+            <input type="number" id="experience" [(ngModel)]="employee.experience" name="experience">
+        </div>
+        <div>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th colspan="5">Role</th>
+                </tr>
+                <tr>
+                    <td *ngFor="let Role of Roles"><input [checked]="Role === employee.role" type="radio"
+                            name="nameOfRole" value="{{Role}}" (change)="radioChange($event)">{{Role}}</td>
+                </tr>
+
+            </table>
+            <!-- <div *ngFor="let Role of Roles" > 
+            <input [checked]="Role === employee.role" type="radio" name="nameOfRole" value="{{Role}}" (change)="radioChange($event)">{{Role}}
+        </div> -->
+
+        </div>
+        <button>Submit</button>
+    </form>
+
+</div>

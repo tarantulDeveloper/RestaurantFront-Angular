@@ -1,0 +1,35 @@
+<h1 style="text-align: center; padding-top: 30px;">Marketing funds</h1>
+<div class="marketing">
+    <div class="login">
+    
+        <form class="marketingForm" #marketingForm="ngForm" (ngSubmit)="addMarketing(marketingForm)">
+        
+            <label for="summa">Increase funds</label>
+            <input type="number" ngModel name="summa" id="summa" placeholder="Increase funds">
+    
+            <button>Increase</button>
+        </form>
+    </div>
+    <div class="login">
+        
+        <form class="marketingForm minus" #minusForm="ngForm" (ngSubmit)="minusMarketing(minusForm)">
+        
+            <label for="minus" style="color:white;">Decrease funds</label>
+            <input type="number" ngModel name="minus" id="minus" placeholder="Decrease funds">
+    
+            <button >Decrease</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <h2 style="text-align: center;">Now we have in marketing budget($):</h2>
+    <h2 *ngFor="let money of finances | async" 
+    style="text-align:center; border: 1px solid black; width: 30%; margin: auto;
+    ">{{money.marketing}}</h2>
+</div>
+
+<div class="expenses">
+    
+</div>
+

@@ -1,0 +1,42 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    flex-direction: column;
+}
+
+.regForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.regForm input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+
+.inner {
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.2);
+}
+
+.inner h3 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.regForm button {
+    background-color: rgb(10, 63, 141);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    border: 0px;
+}

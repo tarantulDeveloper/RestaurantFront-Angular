@@ -1,0 +1,45 @@
+.login {
+    background: url('assets/seoulPhoto.png');
+    background-position: center;
+    background-size: cover;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.loginForm {
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    background: rgba(146, 210, 232, .4);
+}
+
+.login form input {
+    width: 400px;
+    border: 1px pink solid;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+}
+
+
+.login form button {
+    width: 150px;
+    height: 30px;
+    background: rgb(6, 89, 172);
+    border-radius: 5px;
+    border: 1px solid rgb(102, 255, 204);
+    color: white;
+}
+
+.options {
+    color:rgb(0, 0, 102);
+}

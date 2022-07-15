@@ -1,0 +1,36 @@
+<div class="table">
+    <h2>Tasks of worker</h2>
+    <h2 *ngIf="isEmpty" style="color: red;">No tasks</h2>
+    <h2>{{employeeFirstName}} {{employeeLastName}} </h2>
+    <table *ngIf="!isEmpty" class="employee-table">
+        <thead>
+            <tr>
+                <th>Tasks</th>
+                <th>Finished</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks| async">
+
+                <td>{{task.work}}</td>
+                <td><button (click)="deleteWork(task.id)">Remove</button></td>
+
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<h2 style="text-align: center;">Add a task</h2>
+
+<div class="login">
+    
+    <form class="taskForm" #taskForm="ngForm" (ngSubmit)="addWork(taskForm, userName)">
+    
+        <input  ngModel name="task" id="task" placeholder="Task">
+
+        <button>Add</button>
+    </form>
+</div>
+

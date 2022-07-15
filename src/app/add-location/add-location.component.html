@@ -1,0 +1,29 @@
+<h2 style="text-align: center; margin-top: 10px; margin-bottom:0px; color:rgb(86, 22, 145);">Add a location to <b>{{region}}</b></h2>
+
+<div class="login">
+    
+    <form class="locationForm" #locationForm="ngForm" (ngSubmit)="addLocation(locationForm, locationName )">
+    
+        <input  ngModel name="location" id="location" placeholder="New Location">
+
+        <button>Add</button>
+    </form>
+</div>
+<div class="table">
+    
+    <table  class="employee-table">
+        <thead>
+            <tr>
+                <th>Branches</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let locat of locations | async">
+
+                <td>{{locat.location}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>

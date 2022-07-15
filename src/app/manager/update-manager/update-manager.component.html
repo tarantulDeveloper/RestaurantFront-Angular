@@ -1,0 +1,33 @@
+<div class="update">
+    <h3 style="text-align: center;">Edit Employee</h3>
+     <form (ngSubmit)="onSubmit()" class="update-employee">
+         <div>
+             <label for="firstName">First Name</label>
+             <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+         </div>
+         <div>
+             <label for="lastName">Last Name</label>
+             <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+         </div>
+         <div>
+             <label for="depatemnt">Department</label>
+             <input type="text" id="departmen" [(ngModel)]="employee.department" name="department">
+         </div>
+         <div>
+             <label for="jobBegin">Job begin time</label>
+             <input type="text" id="jobBegin" [(ngModel)]="employee.jobBegin" name="jobBegin">
+         </div>
+         <div>
+             <label for="jobEnd">Job end time</label>
+             <input type="text" id="jobEnd" [(ngModel)]="employee.jobEnd" name="jobEnd">
+         </div>
+         <div>
+             <label for="branch">Branch</label>
+             <input type="text" id="branch" [(ngModel)]="employee.branch" name="branch">
+         </div>
+         
+        
+         <button>Submit</button>
+     </form>
+ 
+ </div>
